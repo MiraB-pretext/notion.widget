@@ -1,89 +1,104 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day_Date</title>
+    <title>Day3</title>
 
     <style>
 
+        /*CSS RESETS*/
 
-        body{
-            font-variant-caps: normal;
+body{
+    background-color: #fff;
+    line-height: 1.6;
 
+}
 
-        }
-
-        .widget {
-            padding: 5px 5px ;
-            color: #000000;
-            display: flex;
-            justify-content:center;
-            align-items:center;
-            flex-direction: column;
-            max-width: 95%;
-            margin: auto;
-            border: 3px solid #000000;
-            border-radius: 5px;
-            box-shadow: 2px 2px 1px 0px #000000;
-
-        }
-
-           
-        .greet{
-            font-size: 3em;
-        }
-
-        .date {
-      
-            font-family: Sans-serif;
-            font-size: 2em;
-        }
-
-        .clock {
-            font-family: Sans-serif;
-            font-size: 2em;
-        }
-
-        .time {
-            display: inline-block;
-            min-width: 20px;
-        }
-
-        .colon {
-            font-size: 1em;
-            display: inline-block;
-        }
-
-     
+h1 {
+    margin-top: 0;
+}
 
 
+/*CSS START*/
 
+.full-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.card {
+    padding: 10px 25px 10px 25px;
+    border-radius: 10px;
+    background: #E7F3F8;
+    color: #337EA9;
+    display: inline-block;
+    box-shadow: 2px 2px 1px 0px #337EA9;
+}
+
+.card:hover {
+    margin-top: 2px;
+    box-shadow: none;
+}
+
+.clock {
+    display: inline-block;
+    font-family: 'Verdana', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    /* padding-left: 20px; */
+}
+
+.time {
+    display: inline-block;
+    min-width: 37px;
+}
+
+.colon {
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+.date {
+    display: block;
+    min-width: 162px;
+    /* padding-right: 30px; */
+    /* border-right: 2px solid #295C7B; */
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.2em;
+}
+.greet{
+    
+    min-width: 162px;
+    /* padding-right: 30px; */
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.2em;
+}
 
     </style>
 </head>
 <body>
+   
 
-
-
-
-<div class="container>">
-    <div class="widget">
-
-            <div class="greet" id="greet"></div>
-
-                <div class="date" id="date"></div>
-                </div>
-           
-
-        
-
+<div class="full-table">
+  <div class="table-cell">
+    
+    <div class="card">
+       
+      <div class="date" id="date"></div>
+     
+      </div>
     </div>
+    
+  </div>
 </div>
-        
-
-
 
 <script>
     
