@@ -37,26 +37,11 @@
 
         .date {
       
-            font-family: monospace;
+            font-family: Garamond;
             font-size: 2em;
         }
 
-        .clock {
-            font-family: monospace;
-            font-size: 2em;
-        }
-
-        .time {
-            display: inline-block;
-            min-width: 20px;
-        }
-
-        .colon {
-            font-size: 1em;
-            display: inline-block;
-        }
-
-     
+          
 
 
 
@@ -111,7 +96,7 @@ function dispalyGreetings(today){
         var monthName = monthNames[today.getMonth()];
         var date = today.getDate();
         var year = today.getFullYear();
-        document.getElementById('date').innerHTML =dayName+", "+monthName+" "+date+" "+year;
+        document.getElementById('date').innerHTML =dayName+", "+monthName+" "+date+";
 
     }
 
